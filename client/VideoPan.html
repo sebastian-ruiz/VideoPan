@@ -1,0 +1,27 @@
+<head>
+  <title>VideoPan</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+
+  <div class="border-top border"></div> 
+  <div class="video-wrapper">
+    <video class="video video-slow" id="video-slow" preload>
+      <source src="lincolnSlow.mp4" />
+    </video>
+<!--     <canvas class="video video-effects" id="canvas"></canvas> -->
+    <video class="video video-normal" id="video" preload autoplay>
+    	<source src="lincoln.mp4" />
+    </video>
+
+    
+
+  </div>
+
+  <div class="border-bottom border"></div> 
+
+</template>
